@@ -1,4 +1,9 @@
-Jujutsu Kaisen, elo:1014.71
-Magi, elo:1005.0
-Fruits Baskets, elo:995.0
-Haikyuu, elo:985.29
+Bleach, elo:1038.04
+Jujutsu Kaisen, elo:1028.11
+Fate/Stay Night, elo:1018.94
+Magi, elo:1009.78
+Akame Ga Kill, elo:1000.4
+Wotakoi Love is Hard for Otaku, elo:990.23
+Fruits Baskets, elo:980.97
+Kakeguri, elo:971.34
+Haikyuu, elo:962.19

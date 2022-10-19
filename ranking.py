@@ -52,7 +52,7 @@ def print_menu():
         random_ranking()
         print_menu()
     elif choice == 4:
-        print("Which would you like to view"
+        print("\nWhich would you like to view\n"
                 "> Top 10 rankings (1)\n> Full rankings (2)")
         choice = int(input("Enter your choice > "))
         if choice == 1:
@@ -74,7 +74,7 @@ def add_anime():
     print("\nType the name of the anime and press \'enter\' when done.")
     name = input("> ")
     anime = Anime(name)
-    print(f"\n{anime.name} was successfully added")
+    print(f"\n{anime.name} was successfully added\n")
     return anime
 
 
@@ -92,8 +92,7 @@ def add_anime_to_ranking():
 
     rankings.append(anime)
     rankings.sort(key = lambda anime : anime.rating, reverse = True)
-    print(f"""The final ranking for {anime.name} is {rankings.index(anime) + 1}
-    out of {len(rankings)} animes""")
+    print(f"""\nThe final ranking for {anime.name} is {rankings.index(anime) + 1} out of {len(rankings)} animes""")
     print("\nPress enter to return to main menu")
     input()
 
@@ -111,7 +110,7 @@ def do_rankings(anime_a):
         max = len(rankings)
     animes = random.sample(rankings, max)
 
-    print(" Select the option you prefer more by selecting the corresponding"
+    print("Select the option you prefer more by selecting the corresponding "
            "number and hitting \'enter\'")
 
     for anime_b in animes:
@@ -125,7 +124,7 @@ def do_rankings(anime_a):
 # anime_a: the first anime
 # anime_b: the second anime
 def rank(anime_a, anime_b):
-    print("\nWhich anime was better")
+    print("\nWhich anime was better?")
     print(f"{anime_a.name} (1)\n{anime_b.name} (2)")
     choice = make_choice(2)
     
@@ -168,7 +167,7 @@ def print_rankings(top_ten):
     time.sleep(0.5)
     index = 0
     for anime in rankings:
-        print(f"{index}. {anime}")
+        print(f"{index + 1}. {anime}")
         index += 1
         if top_ten:
             if index == 10:
